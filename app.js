@@ -12,5 +12,4 @@ app.get('/list_ticket_details',(req,res) => {
     });
     res.status(200).send(response);
 })
-
 app.listen(8080, () => console.log('running on port 8080'));
