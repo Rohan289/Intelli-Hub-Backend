@@ -1,7 +1,7 @@
 // app.js
 const express = require('express');
 const cors = require('cors');
-const {ticketDetails} = require("./ticketData");
+const {ticketDetails,userData} = require("./ticketData");
 const app = express();
 app.use(cors());
 app.get('/', (req, res) => res.send('Hello!'));
@@ -23,5 +23,8 @@ app.get("/list_filtered_ticket_details", (req, res) => {
       });
       res.send(filteredTicket);
 });
+app.get('/user_details',(req,res) => {
+    res.status(200).send(userData);
+})
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log('running on port 8080'));
