@@ -7,10 +7,21 @@ app.use(cors());
 app.get('/', (req, res) => res.send('Hello!'));
 app.get('/list_ticket_details',(req,res) => {
     let response = [];
-    ticketDetails.map((element) => {
-        response.push(element);
-    });
-    res.status(200).send(response);
+    if(req.query && req.query.search) {
+        let searchByQuery = req.query.search;
+        let condition = new RegExp(searchByQuery);
+        let filteredTicket = ticketDetails.filter((ticket) => {
+            return condition.test(ticket.description) || condition.test(ticket.name) || condition.test(ticket.assignee);
+            
+        })
+        res.status(200).send(filteredTicket);
+    }
+    else {
+        ticketDetails.map((element) => {
+            response.push(element);
+        });
+        res.status(200).send(response);
+    }
 })
 app.get("/list_filtered_ticket_details", (req, res) => {
     const filters = req.query;
