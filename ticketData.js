@@ -29,7 +29,7 @@ const ticketDetails = [
     {
         id : 4,
         name : "Need to change my delivery date",
-        type : "Task",
+        type : "Bug",
         assignee : "Swarnim Bhatt",
         status : "Cancelled",
         priority : "P3",
@@ -47,7 +47,7 @@ const ticketDetails = [
     {
         id : 6,
         name : "Need to change my delivery route",
-        type : "Task",
+        type : "Bug",
         assignee : "Prakhar Ranjan",
         status : "Open",
         priority : "P3",
@@ -56,7 +56,7 @@ const ticketDetails = [
     {
         id : 7,
         name : "Need to change my dispatch date",
-        type : "Task",
+        type : "Epic",
         assignee : "Rohan Bhowmick",
         status : "Cancelled",
         priority : "P3",
