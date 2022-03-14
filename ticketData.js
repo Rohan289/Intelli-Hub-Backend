@@ -34,6 +34,33 @@ const ticketDetails = [
         status : "Cancelled",
         priority : "P3",
         description : "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like."   
+    },
+    {
+        id : 5,
+        name : "Need to change my SKU",
+        type : "Task",
+        assignee : "Swarnim Bhatt",
+        status : "To do",
+        priority : "P2",
+        description : "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like."   
+    },
+    {
+        id : 6,
+        name : "Need to change my delivery route",
+        type : "Task",
+        assignee : "Prakhar Ranjan",
+        status : "Open",
+        priority : "P3",
+        description : "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like."   
+    },
+    {
+        id : 7,
+        name : "Need to change my dispatch date",
+        type : "Task",
+        assignee : "Rohan Bhowmick",
+        status : "Cancelled",
+        priority : "P3",
+        description : "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like."   
     }
 ]
 
