@@ -38,4 +38,4 @@ app.get('/user_details',(req,res) => {
     res.status(200).send(userData);
 })
 const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => console.log('App is running on port 8080'));
+app.listen(PORT, () => console.log('App is running on port 8080!'));
