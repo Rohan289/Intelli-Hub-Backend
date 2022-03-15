@@ -11,7 +11,7 @@ app.get('/list_ticket_details',(req,res) => {
         let searchByQuery = req.query.search;
         let condition = new RegExp(searchByQuery);
         let filteredTicket = ticketDetails.filter((ticket) => {
-            return condition.test(ticket.description) || condition.test(ticket.name) || condition.test(ticket.assignee);
+            return condition.test(ticket.description) || condition.test(ticket.name) || condition.test(ticket.assignee) || condition.test(ticket.type);
             
         })
         res.status(200).send(filteredTicket);
